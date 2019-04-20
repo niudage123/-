@@ -1,0 +1,85 @@
+@import "../common/vendor.wxss";
+
+.currentCityTitle {
+  width: 95%;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  padding-left: 5%;
+  background-color: #fff;
+  margin-top: 110rpx;
+  font-weight: 700;
+}
+.currentCity {
+  width: 90%;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  padding-left: 5%;
+  background-color: #fff;
+}
+.a-z {
+  width: 30rpx;
+  position: fixed;
+  top: 130rpx;
+  text-align: center;
+  right: 5rpx;
+  color: #3F51B5;
+}
+.a-z view {
+  font-size: 26rpx;
+}
+.city-item-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.city-item {
+  background: #fff;
+  width: 90%;
+  padding-left: 5%;
+  height: 90rpx;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #d1d1d1;
+}
+.city-item-A-Z {
+  width: 95%;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  padding-left: 5%;
+  background-color: #f6f6f6;
+  color: #999;
+}
+.search-box {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background: #eee;
+  height: 110rpx;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #d1d1d1;
+}
+.search-input {
+  height: 70rpx;
+  line-height: 60rpx;
+  width: 80%;
+  margin-left: 7.5%;
+  border-radius: 20rpx;
+  background: #fff;
+  margin-top: 20rpx;
+  padding-left: 5%;
+  font-size: 26rpx;
+}
+.search-input-placeholder {
+  text-align: center;
+}

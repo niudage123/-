@@ -1,0 +1,32 @@
+<template name="3ff733cb">
+  <view class="_view data-v-1f3b7180">
+    <view class="_view data-v-1f3b7180 fixedit" style=" {{('top:' + top + ';')}}">
+      <scroll-view class="_scroll-view data-v-1f3b7180 grace-tab-title grace-center" scroll-x="true" id="grace-tab-title">
+        <view wx:key="index" key="{{index}}" data-cateid="{{cate.cateid}}" data-index="{{index}}" bindtap="handleProxy" data-eventid="{{'rjV-0-'+index}}" data-comkey="{{$k}}" wx:for="{{categories}}" wx:for-index="index" wx:for-item="cate" class="_view data-v-1f3b7180 {{[cateCurrentIndex == index ? 'grace-tab-current' : '']}}">{{cate.name}}</view>
+      </scroll-view>
+    </view>
+    <view style="height:50px;" class="_view data-v-1f3b7180"></view>
+    <view class="_view data-v-1f3b7180 grace-news-list" style="width:94%; padding:5px 3%;">
+      <block wx:key="index" key="{{index}}" wx:for="{{artList}}" wx:for-index="index" wx:for-item="item">
+        <navigator url="../article-info/article-info" wx:if="{{item.imgs.length < 3}}" open-type="navigate" class="_navigator data-v-1f3b7180">
+          <view class="_view data-v-1f3b7180 grace-news-list-img-news">
+            <view class="_view data-v-1f3b7180 grace-news-list-title-main">{{item.title}}</view>
+            <view class="_view data-v-1f3b7180 grace-news-list-img-big">
+              <image src="{{item.imgs[0]}}" mode="widthFix" class="_image data-v-1f3b7180"></image>
+            </view>
+          </view>
+        </navigator>
+        <navigator url="../article-info/article-info" wx:if="{{item.imgs.length >= 3}}" class="_navigator data-v-1f3b7180">
+          <view class="_view data-v-1f3b7180 grace-news-list-img-news">
+            <view class="_view data-v-1f3b7180 grace-news-list-title-main">{{item.title}}</view>
+            <view class="_view data-v-1f3b7180 grace-news-list-imgs">
+              <image src="{{item.imgs[0]}}" mode="widthFix" class="_image data-v-1f3b7180"></image>
+              <image src="{{item.imgs[1]}}" mode="widthFix" class="_image data-v-1f3b7180"></image>
+              <image src="{{item.imgs[2]}}" mode="widthFix" class="_image data-v-1f3b7180"></image>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,112 @@
+{
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path" : "pages/index/index",
+            "style" : {}
+        },
+		{
+		    "path" : "components/city",
+		    "style" : {}
+		},
+        {
+            "path" : "pages/community/community",
+            "style" : {
+                "navigationBarTitleText" : "故事",
+                "enablePullDownRefresh" : true
+            }
+        },
+        {
+            "path" : "pages/shoppingcart/shoppingcart",
+            "style" : {
+                "navigationBarTitleText" : "收藏"
+            }
+        },
+        {
+            "path" : "pages/my/my",
+            "style" : {
+                "navigationBarTitleText" : "我的"
+            }
+        },
+        {
+            "path" : "pages/product-info/product-info",
+            "style" : {}
+        },
+        {
+            "path" : "pages/shopping-cart/shopping-cart",
+            "style" : {
+                "navigationBarTitleText" : "收藏"
+            }
+        },
+        {
+            "path" : "pages/article-info/article-info",
+            "style" : {}
+        },
+        {
+            "path" : "pages/set/set",
+            "style" : {
+				"navigationBarTitleText" : "账户设置"
+			}
+        },
+		{
+		    "path" : "components/submit-form-family",
+		    "style" : {
+				"navigationBarTitleText" : "搜索寄养家庭"
+			}
+		},
+		{
+		    "path" : "components/submit-form",
+		    "style" : {
+				"navigationBarTitleText" : "搜索寄养人"
+			}
+		}
+		
+        ,{
+            "path" : "pages/fosterage/fosterage",
+            "style" : {
+				"navigationBarTitleText" : "寄养家庭指南"
+			}
+        }
+        ,{
+            "path" : "pages/familydetail/familydetail",
+            "style" : {}
+        }
+    ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "Ipet",
+        "navigationBarBackgroundColor" : "#ffffff",
+        "backgroundColor" : "#ffffff"
+    },
+    "tabBar" : {
+        "color" : "#8E8585",
+        "selectedColor" : "#F39319",
+		"backgroundColor":"#ffffff",
+        "list" : [
+            {
+                "pagePath" : "pages/index/index",
+                "text" : "首页",
+                "iconPath" : "static/nav-home.png",
+                "selectedIconPath" : "static/nav-home-a.png"
+            },
+            {
+                "pagePath" : "pages/community/community",
+                "text" : "故事",
+                "iconPath" : "static/nav-community.png",
+                "selectedIconPath" : "static/nav-community-a.png"
+            },
+            {
+                "pagePath" : "pages/shoppingcart/shoppingcart",
+                "text" : "收藏",
+                "iconPath" : "static/nav-massage.png",
+                "selectedIconPath" : "static/nav-shoppingcart-a.png"
+            },
+            {
+                "pagePath" : "pages/my/my",
+                "text" : "我的",
+                "iconPath" : "static/nav-my.png",
+                "selectedIconPath" : "static/nav-my-a.png"
+            }
+        ]
+    }
+}

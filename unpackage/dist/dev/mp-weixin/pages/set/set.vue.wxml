@@ -1,0 +1,55 @@
+<template name="41d1307d">
+  <view class="_view data-v-5f60901c">
+    <view class="_view data-v-5f60901c grace-left-padding-wrap">
+      <navigator class="_navigator data-v-5f60901c grace-list">
+        <text class="_text data-v-5f60901c grace-list-text">头像</text>
+        <view class="_view data-v-5f60901c">
+          <image src="http://img5.imgtn.bdimg.com/it/u=2680621696,3508064843&fm=11&gp=0.jpg" class="_image data-v-5f60901c grace-list-imgs-l" mode="widthFix"></image>
+          <text class="_text data-v-5f60901c grace-list-imgs-arrow grace-iconfont icon-arrow-right"></text>
+        </view>
+      </navigator>
+      <navigator class="_navigator data-v-5f60901c grace-list">
+        <text class="_text data-v-5f60901c grace-list-text">昵称</text>
+        <view class="_view data-v-5f60901c">
+          <text class="_text data-v-5f60901c grace-list-text grace-list-mr">graceUI</text>
+          <text class="_text data-v-5f60901c grace-list-imgs-arrow grace-iconfont icon-arrow-right"></text>
+        </view>
+      </navigator>
+      <navigator class="_navigator data-v-5f60901c grace-list">
+        <text class="_text data-v-5f60901c grace-list-text">手机号</text>
+        <view class="_view data-v-5f60901c">
+          <text class="_text data-v-5f60901c grace-list-text grace-list-mr">181095588**</text>
+          <text class="_text data-v-5f60901c grace-list-imgs-arrow grace-iconfont icon-arrow-right"></text>
+        </view>
+      </navigator>
+      <navigator class="_navigator data-v-5f60901c grace-list grace-noborder">
+        <text class="_text data-v-5f60901c grace-list-text">收款账户</text>
+        <text class="_text data-v-5f60901c grace-list-imgs-arrow grace-iconfont icon-arrow-right"></text>
+      </navigator>
+    </view>
+    <view class="_view data-v-5f60901c grace-left-padding-wrap" style="margin-top:30rpx;">
+      <navigator class="_navigator data-v-5f60901c grace-list">
+        <text class="_text data-v-5f60901c grace-list-text">消息通知设置</text>
+        <switch checked class="_switch data-v-5f60901c" />
+      </navigator>
+    </view>
+    <view class="_view data-v-5f60901c grace-left-padding-wrap" style="margin-top:30rpx;">
+      <navigator class="_navigator data-v-5f60901c grace-list">
+        <text class="_text data-v-5f60901c grace-list-text">去好评</text>
+        <text class="_text data-v-5f60901c grace-list-imgs-arrow grace-iconfont icon-arrow-right"></text>
+      </navigator>
+      <navigator class="_navigator data-v-5f60901c grace-list">
+        <text class="_text data-v-5f60901c grace-list-text">推荐好友</text>
+        <text class="_text data-v-5f60901c grace-list-imgs-arrow grace-iconfont icon-arrow-right"></text>
+      </navigator>
+      <navigator class="_navigator data-v-5f60901c grace-list grace-noborder">
+        <text class="_text data-v-5f60901c grace-list-text">关于我们</text>
+        <text class="_text data-v-5f60901c grace-list-imgs-arrow grace-iconfont icon-arrow-right"></text>
+      </navigator>
+    </view>
+    <view style="width:100%; margin-top:30rpx;" class="_view data-v-5f60901c">
+      <button style="width:100%; background:#FFFFFF; border:0;" class="_button data-v-5f60901c">退出登录</button>
+    </view>
+    <view style="width:100%; height:60rpx;" class="_view data-v-5f60901c"></view>
+  </view>
+</template>

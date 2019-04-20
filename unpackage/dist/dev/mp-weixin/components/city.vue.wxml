@@ -1,0 +1,19 @@
+<template name="a73a1144">
+  <view class="_view data-v-2a3b45cc">
+    <view class="_view data-v-2a3b45cc search-box">
+      <input placeholder="中文/拼音/首字母" class="_input data-v-2a3b45cc search-input" bindinput="handleProxy" placeholder-class="search-input-placeholder" data-eventid="{{'B2e-0'}}" data-comkey="{{$k}}" />
+    </view>
+    <view class="_view data-v-2a3b45cc currentCityTitle">当前 ： {{currentCity}}</view>
+    <view class="_view data-v-2a3b45cc a-z">
+      <view wx:key="index" key="{{index}}" wx:for="{{cityAZ}}" wx:for-index="index" wx:for-item="item" class="_view data-v-2a3b45cc">
+        <view data-id="{{item.cityName}}" bindtap="handleProxy" data-eventid="{{'JBw-1-'+index}}" data-comkey="{{$k}}" class="_view data-v-2a3b45cc">{{item.cityName}}</view>
+      </view>
+    </view>
+    <view class="_view data-v-2a3b45cc city-item-content">
+      <view wx:key="index" key="{{index}}" wx:for="{{cityResults}}" wx:for-index="index" wx:for-item="item" class="_view data-v-2a3b45cc">
+        <view wx:if="{{item.cityPinYin.length > 1}}" class="_view data-v-2a3b45cc city-item" data-cityname="{{item.cityName}}" bindtap="handleProxy" data-eventid="{{'IDn-2-'+index}}" data-comkey="{{$k}}">{{item.cityName}}</view>
+        <view wx:else class="_view data-v-2a3b45cc city-item-A-Z" data-cityname="{{item.cityName}}">{{item.cityName}}</view>
+      </view>
+    </view>
+  </view>
+</template>

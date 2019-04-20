@@ -1,0 +1,13 @@
+@import "../../common/vendor.wxss";
+
+.fixedit {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+}
+.grace-news-list-imgs {
+  max-height: 68px;
+  overflow: hidden;
+}

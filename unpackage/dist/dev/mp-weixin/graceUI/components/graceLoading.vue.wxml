@@ -1,0 +1,6 @@
+<template name="d7d84772">
+  <view class="_view data-v-f31e73fc grace-loading grace-ellipsis" wx:if="{{show}}">
+    <view class="_view data-v-f31e73fc grace-loading-icon" wx:if="{{loadingType === 1}}"></view>
+    <text class="_text data-v-f31e73fc">{{loadingText[loadingType]}}</text>
+  </view>
+</template>

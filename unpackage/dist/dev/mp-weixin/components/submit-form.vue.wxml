@@ -1,0 +1,160 @@
+<template name="5020a636">
+  <view class="_view data-v-4db5e008 grace-padding" style="background-color: #F8F8F8;">
+    <view class="_view data-v-4db5e008 grace-accordion" style="margin-top: 20px;">
+      <view class="_view data-v-4db5e008 grace-accordion-items">
+        <view style="text-align: left;font-weight:bold;color: red; " id="grace-accordion-1" bindtap="handleProxy" data-eventid="{{'Bdk-0'}}" data-comkey="{{$k}}" class="_view data-v-4db5e008 {{[  accordionActive == 'grace-accordion-1'    ? 'grace-accordion-title grace-current'    : 'grace-accordion-title']}}">
+        我要寄养
+          <text class="_text data-v-4db5e008 grace-list-imgs-arrow grace-iconfont icon-arrow-down" wx:if="{{accordionActive == 'grace-accordion-1'}}"></text>
+          <text class="_text data-v-4db5e008 grace-list-imgs-arrow grace-iconfont icon-arrow-up" wx:else></text>
+        </view>
+        <view class="_view data-v-4db5e008 grace-accordion-body" wx:if="{{accordionActive == 'grace-accordion-1'}}">
+          <view class="_view data-v-4db5e008 grace-form">
+            <form bindsubmit="handleProxy" data-eventid="{{'DPL-3'}}" data-comkey="{{$k}}" class="_form data-v-4db5e008">
+              <view class="_view data-v-4db5e008 grace-items">
+                <view class="_view data-v-4db5e008 grace-label">姓名</view>
+                <input type="text" class="_input data-v-4db5e008 input" name="name" />
+              </view>
+              <view class="_view data-v-4db5e008 grace-items">
+                <view class="_view data-v-4db5e008 grace-label">性别</view>
+                <view class="_view data-v-4db5e008 grace-form-r">
+                  <picker bindchange="handleProxy" value="{{genderIndex}}" range="{{gender}}" name="gender" data-eventid="{{'32o-1'}}" data-comkey="{{$k}}" class="_picker data-v-4db5e008">
+                    <text class="_text data-v-4db5e008">{{gender[genderIndex]}}</text>
+                  </picker>
+                </view>
+              </view>
+              <view class="_view data-v-4db5e008 grace-items">
+                <view class="_view data-v-4db5e008 grace-label">出生年月</view>
+                <view class="_view data-v-4db5e008 grace-form-r">
+                  <picker bindchange="handleProxy" value="{{dateValue}}" mode="date" name="bd" start="1940-01-01" end="2019-01-01" data-eventid="{{'9o4-2'}}" data-comkey="{{$k}}" class="_picker data-v-4db5e008">
+                    <text class="_text data-v-4db5e008">{{dateValue}}</text>
+                  </picker>
+                </view>
+              </view>
+              <view class="_view data-v-4db5e008 grace-items">
+                <view class="_view data-v-4db5e008 grace-label">自动保存</view>
+                <view class="_view data-v-4db5e008 grace-form-r">
+                  <switch checked class="_switch data-v-4db5e008" />
+                </view>
+              </view>
+              <view class="_view data-v-4db5e008 grace-items">
+                <view class="_view data-v-4db5e008 grace-label">个人爱好</view>
+                <view class="_view data-v-4db5e008 grace-label-x">
+                  <checkbox-group name="aihao" class="_checkbox-group data-v-4db5e008">
+                    <label class="_label data-v-4db5e008">
+                      <checkbox value="1" class="_checkbox data-v-4db5e008"></checkbox>读书</label>
+                    <label class="_label data-v-4db5e008">
+                      <checkbox value="2" class="_checkbox data-v-4db5e008"></checkbox>运动</label>
+                    <label class="_label data-v-4db5e008">
+                      <checkbox value="3" class="_checkbox data-v-4db5e008"></checkbox>音乐</label>
+                    <label class="_label data-v-4db5e008">
+                      <checkbox value="4" class="_checkbox data-v-4db5e008"></checkbox>书法</label>
+                    <label class="_label data-v-4db5e008">
+                      <checkbox value="5" class="_checkbox data-v-4db5e008"></checkbox>旅行</label>
+                    <label class="_label data-v-4db5e008">
+                      <checkbox value="6" class="_checkbox data-v-4db5e008"></checkbox>其他</label>
+                  </checkbox-group>
+                </view>
+              </view>
+              <view class="_view data-v-4db5e008 grace-items">
+                <view class="_view data-v-4db5e008 grace-label">单项选择</view>
+                <view class="_view data-v-4db5e008 grace-label-y">
+                  <radio-group name="danxuan" class="_radio-group data-v-4db5e008">
+                    <label class="_label data-v-4db5e008">
+                      <radio value="1" class="_radio data-v-4db5e008" />小学</label>
+                    <label class="_label data-v-4db5e008">
+                      <radio value="2" class="_radio data-v-4db5e008" />大学</label>
+                  </radio-group>
+                </view>
+              </view>
+              <view class="_view data-v-4db5e008 grace-items grace-noborder">
+                <view class="_view data-v-4db5e008 grace-label">个人介绍</view>
+                <view class="_view data-v-4db5e008 grace-form-r">
+                  <textarea placeholder="说点什么吧....." name="desc" class="_textarea data-v-4db5e008" />
+                </view>
+              </view>
+              <view style="padding:22rpx 0;" class="_view data-v-4db5e008">
+                <button formType="submit" type="primary" style="width:100%;" class="_button data-v-4db5e008">提交</button>
+              </view>
+            </form>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view style="text-align: left;font-weight:bold;color: red;" id="grace-accordion-2" bindtap="handleProxy" data-eventid="{{'brn-4'}}" data-comkey="{{$k}}" class="_view data-v-4db5e008 {{[  accordionActive == 'grace-accordion-2'    ? 'grace-accordion-title grace-current'    : 'grace-accordion-title']}}">
+    成为寄养家庭
+      <text class="_text data-v-4db5e008 grace-list-imgs-arrow grace-iconfont icon-arrow-down" wx:if="{{accordionActive == 'grace-accordion-2'}}"></text>
+      <text class="_text data-v-4db5e008 grace-list-imgs-arrow grace-iconfont icon-arrow-up" wx:else></text>
+    </view>
+    <view class="_view data-v-4db5e008 grace-accordion-body" wx:if="{{accordionActive == 'grace-accordion-2'}}">
+      <view class="_view data-v-4db5e008 grace-form">
+        <form bindsubmit="handleProxy" data-eventid="{{'1o8-7'}}" data-comkey="{{$k}}" class="_form data-v-4db5e008">
+          <view class="_view data-v-4db5e008 grace-items">
+            <view class="_view data-v-4db5e008 grace-label">姓名</view>
+            <input type="text" class="_input data-v-4db5e008 input" name="name" />
+          </view>
+          <view class="_view data-v-4db5e008 grace-items">
+            <view class="_view data-v-4db5e008 grace-label">性别</view>
+            <view class="_view data-v-4db5e008 grace-form-r">
+              <picker bindchange="handleProxy" value="{{genderIndex}}" range="{{gender}}" name="gender" data-eventid="{{'7Rt-5'}}" data-comkey="{{$k}}" class="_picker data-v-4db5e008">
+                <text class="_text data-v-4db5e008">{{gender[genderIndex]}}</text>
+              </picker>
+            </view>
+          </view>
+          <view class="_view data-v-4db5e008 grace-items">
+            <view class="_view data-v-4db5e008 grace-label">出生年月</view>
+            <view class="_view data-v-4db5e008 grace-form-r">
+              <picker bindchange="handleProxy" value="{{dateValue}}" mode="date" name="bd" start="2018-01-01" end="2019-01-01" data-eventid="{{'5EL-6'}}" data-comkey="{{$k}}" class="_picker data-v-4db5e008">
+                <text class="_text data-v-4db5e008">{{dateValue}}</text>
+              </picker>
+            </view>
+          </view>
+          <view class="_view data-v-4db5e008 grace-items">
+            <view class="_view data-v-4db5e008 grace-label">自动保存</view>
+            <view class="_view data-v-4db5e008 grace-form-r">
+              <switch checked class="_switch data-v-4db5e008" />
+            </view>
+          </view>
+          <view class="_view data-v-4db5e008 grace-items">
+            <view class="_view data-v-4db5e008 grace-label">个人爱好</view>
+            <view class="_view data-v-4db5e008 grace-label-x">
+              <checkbox-group name="aihao" class="_checkbox-group data-v-4db5e008">
+                <label class="_label data-v-4db5e008">
+                  <checkbox value="1" class="_checkbox data-v-4db5e008"></checkbox>读书</label>
+                <label class="_label data-v-4db5e008">
+                  <checkbox value="2" class="_checkbox data-v-4db5e008"></checkbox>运动</label>
+                <label class="_label data-v-4db5e008">
+                  <checkbox value="3" class="_checkbox data-v-4db5e008"></checkbox>音乐</label>
+                <label class="_label data-v-4db5e008">
+                  <checkbox value="4" class="_checkbox data-v-4db5e008"></checkbox>书法</label>
+                <label class="_label data-v-4db5e008">
+                  <checkbox value="5" class="_checkbox data-v-4db5e008"></checkbox>旅行</label>
+                <label class="_label data-v-4db5e008">
+                  <checkbox value="6" class="_checkbox data-v-4db5e008"></checkbox>其他</label>
+              </checkbox-group>
+            </view>
+          </view>
+          <view class="_view data-v-4db5e008 grace-items">
+            <view class="_view data-v-4db5e008 grace-label">单项选择</view>
+            <view class="_view data-v-4db5e008 grace-label-y">
+              <radio-group name="danxuan" class="_radio-group data-v-4db5e008">
+                <label class="_label data-v-4db5e008">
+                  <radio value="1" class="_radio data-v-4db5e008" />小学</label>
+                <label class="_label data-v-4db5e008">
+                  <radio value="2" class="_radio data-v-4db5e008" />大学</label>
+              </radio-group>
+            </view>
+          </view>
+          <view class="_view data-v-4db5e008 grace-items grace-noborder">
+            <view class="_view data-v-4db5e008 grace-label">个人介绍</view>
+            <view class="_view data-v-4db5e008 grace-form-r">
+              <textarea placeholder="说点什么吧....." name="desc" class="_textarea data-v-4db5e008" />
+            </view>
+          </view>
+          <view style="padding:22rpx 0;" class="_view data-v-4db5e008">
+            <button formType="submit" type="primary" style="width:100%;" class="_button data-v-4db5e008">提交</button>
+          </view>
+        </form>
+      </view>
+    </view>
+  </view>
+</template>

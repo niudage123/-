@@ -1,0 +1,75 @@
+<import src="/graceUI/components/graceSwiper.vue.wxml" />
+<import src="/components/graceSpeaker.vue.wxml" />
+<template name="fe769546">
+  <view class="_view data-v-7e69a992 index-body">
+    <view class="_view data-v-7e69a992 grace-padding" style="background-color: #00c143;">
+      <view class="_view data-v-7e69a992 grace-rows" style="margin-top:15px;">
+        <view class="_view data-v-7e69a992 grace-items grace-rows-demo " style="width:20%; line-height: 30px; margin-right: 10px; color: #FFFFFF;">
+          <navigator url="{{'../../components/'+lists.path}}" class="_navigator data-v-7e69a992">
+            <view style="font-size: 13px; text-align: right;" class="_view data-v-7e69a992">
+              <text style="font-size: 13px; text-align: right;" class="_text data-v-7e69a992">{{location}}</text>
+              <text class="_text data-v-7e69a992 grace-iconfont icon-arrow-down" style="font-size: 13px;"></text>
+            </view>
+          </navigator>
+        </view>
+        <view class="_view data-v-7e69a992 grace-items grace-bg-green grace-rows-demo grace-center" style="width:90%;margin-right: 18px;">
+          <view class="_view data-v-7e69a992 grace-search-in" style="border-radius: 3px;">
+            <view class="_view data-v-7e69a992 grace-search-icon"></view>
+            <input type="search" style="height:28rpx; line-height:28rpx; font-size:12px; " bindinput="handleProxy" bindconfirm="handleProxy" value="{{searchKey}}" placeholder="您附近的寄养家庭" data-eventid="{{'oem-0'}}" data-comkey="{{$k}}" class="_input data-v-7e69a992"
+            />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-7e69a992 grace-padding">
+      <view style="padding:50rpx 0;" class="_view data-v-7e69a992 grace-wrap">
+        <navigator class="_navigator data-v-7e69a992 grace-boxes" url="../../components/submit-form-family">
+          <view class="_view data-v-7e69a992 grace-boxes-img iconfont icon-dog" style="color: #09BB07;font-size: 30px;"></view>
+          <view class="_view data-v-7e69a992 grace-boxes-text" style="color: #00c143; font-size: 13px;">我要寄养</view>
+        </navigator>
+        <navigator class="_navigator data-v-7e69a992 grace-boxes" bindtap="handleProxy" data-eventid="{{'9vX-1'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-7e69a992 grace-boxes-img iconfont icon-cat" style="color: #09BB07;font-size: 30px;"></view>
+          <view class="_view data-v-7e69a992 grace-boxes-text" style="color: #00c143; font-size: 13px;">寄养家庭</view>
+        </navigator>
+        <navigator class="_navigator data-v-7e69a992 grace-boxes" bindtap="handleProxy" data-eventid="{{'TlV-2'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-7e69a992 grace-boxes-img iconfont icon-story" style="color: #09BB07;font-size: 30px;"></view>
+          <view class="_view data-v-7e69a992 grace-boxes-text" style="color: #00c143; font-size: 13px;">故事</view>
+        </navigator>
+        <navigator class="_navigator data-v-7e69a992 grace-boxes" bindtap="handleProxy" data-eventid="{{'3Ua-3'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-7e69a992 grace-boxes-img iconfont icon-shequ" style="color: #09BB07;font-size: 30px;"></view>
+          <view class="_view data-v-7e69a992 grace-boxes-text" style="color: #00c143; font-size: 13px;">社区</view>
+        </navigator>
+      </view>
+    </view>
+    <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'e2l-0'],$root}}" is="a5940386"></template>
+    <view class="_view data-v-7e69a992 grace-padding" style="border-bottom:dashed 1px #2FBF79;">
+      <template data="{{...$root['0'], ...$root[$kk+'C8L-1'],$root}}" is="7ec6a3cc"></template>
+    </view>
+    <view class="_view data-v-7e69a992 grace-title grace-nowrap grace-space-between" style="margin-top:12px;">
+      <view class="_view data-v-7e69a992 grace-h5 grace-blod">寄养家庭推荐</view>
+      <navigator class="_navigator data-v-7e69a992 grace-more-r">更多
+        <text class="_text data-v-7e69a992 grace-iconfont icon-arrow-right"></text>
+      </navigator>
+    </view>
+    <scroll-view class="_scroll-view data-v-7e69a992 grace-scroll-x" scroll-x style="margin-top:10px;">
+      <view class="_view data-v-7e69a992 grace-items">
+        <image src="../../static/pinpai/1.png" mode="widthFix" class="_image data-v-7e69a992"></image>
+      </view>
+      <view class="_view data-v-7e69a992 grace-items">
+        <image src="../../static/pinpai/2.png" mode="widthFix" class="_image data-v-7e69a992"></image>
+      </view>
+      <view class="_view data-v-7e69a992 grace-items">
+        <image src="../../static/pinpai/3.png" mode="widthFix" class="_image data-v-7e69a992"></image>
+      </view>
+      <view class="_view data-v-7e69a992 grace-items">
+        <image src="../../static/pinpai/4.png" mode="widthFix" class="_image data-v-7e69a992"></image>
+      </view>
+      <view class="_view data-v-7e69a992 grace-items">
+        <image src="../../static/pinpai/5.png" mode="widthFix" class="_image data-v-7e69a992"></image>
+      </view>
+    </scroll-view>
+    <view class="_view data-v-7e69a992 index-banner">
+      <image src="../../static/index-banner.png" mode="widthFix" class="_image data-v-7e69a992"></image>
+    </view>
+  </view>
+</template>

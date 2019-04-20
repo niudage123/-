@@ -1,0 +1,43 @@
+<template name="7a26868b">
+  <view class="_view data-v-54a5fc79 grace-padding" style="background-color: #F8F8F8;">
+    <view class="_view data-v-54a5fc79 grace-accordion" style="margin-top: 20px;">
+      <view class="_view data-v-54a5fc79 grace-form">
+        <form bindsubmit="handleProxy" data-eventid="{{'xki-3'}}" data-comkey="{{$k}}" class="_form data-v-54a5fc79">
+          <view class="_view data-v-54a5fc79 grace-items">
+            <view class="_view data-v-54a5fc79 grace-label">宠物类型</view>
+            <view class="_view data-v-54a5fc79 grace-form-r">
+              <picker bindchange="handleProxy" value="{{petIndex}}" range="{{petType}}" name="petType" data-eventid="{{'3yX-0'}}" data-comkey="{{$k}}" class="_picker data-v-54a5fc79">
+                <text class="_text data-v-54a5fc79">{{petType[petIndex]}}</text>
+              </picker>
+            </view>
+          </view>
+          <view class="_view data-v-54a5fc79 grace-items">
+            <view class="_view data-v-54a5fc79 grace-label" style="width: 100px;">开始寄养日期</view>
+            <view class="_view data-v-54a5fc79 grace-form-r">
+              <picker bindchange="handleProxy" value="{{startDateValue}}" mode="date" name="startDate" start="1940-01-01" end="2030-12-31" data-eventid="{{'ty5-1'}}" data-comkey="{{$k}}" class="_picker data-v-54a5fc79">
+                <text class="_text data-v-54a5fc79">{{startDateValue}}</text>
+              </picker>
+            </view>
+          </view>
+          <view class="_view data-v-54a5fc79 grace-items">
+            <view class="_view data-v-54a5fc79 grace-label" style="width: 100px;">结束寄养日期</view>
+            <view class="_view data-v-54a5fc79 grace-form-r">
+              <picker bindchange="handleProxy" value="{{endDateValue}}" mode="date" name="endDate" start="1940-01-01" end="2030-12-31" data-eventid="{{'0Ms-2'}}" data-comkey="{{$k}}" class="_picker data-v-54a5fc79">
+                <text class="_text data-v-54a5fc79">{{endDateValue}}</text>
+              </picker>
+            </view>
+          </view>
+          <view class="_view data-v-54a5fc79 grace-items grace-noborder">
+            <view class="_view data-v-54a5fc79 grace-label">其他宠物信息</view>
+            <view class="_view data-v-54a5fc79 grace-form-r">
+              <textarea placeholder="如果您选择其他宠物类型,请在此填写" name="desc" class="_textarea data-v-54a5fc79" />
+            </view>
+          </view>
+          <view style="padding:22rpx 0;" class="_view data-v-54a5fc79">
+            <button formType="submit" type="primary" style="width:100%;" class="_button data-v-54a5fc79">提交</button>
+          </view>
+        </form>
+      </view>
+    </view>
+  </view>
+</template>

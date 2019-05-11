@@ -326,5 +326,5 @@ margin:0; color:#000; min-height:28upx;}
 .grace-list-imgs-arrow{width:40upx; flex-shrink:0; text-align:right; color:#888; font-size:36upx;}
 .grace-list-mr{margin-right:20upx;}
 /*自己的一些通用样式*/
-.fos_index{	width:670upx;	margin-left:40upx ;}
-.banner{margin-top:40upx;display: flex; flex-flow: row wrap;    justify-content: space-between;}
+.fos_index{	}
+.banner{margin-top:40upx;display: flex; flex-flow: row wrap;    justify-content: space-between;width:670upx;	margin-left:40upx ;}

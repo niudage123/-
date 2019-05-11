@@ -12,75 +12,14 @@
 		</view>
 		<view class="banner">
 			<text class="info_tit">谁是本期超赞家庭，戳进来看看</text>
-			<view class="fosterages">
-				<view class="fos_img">
-					<image src="https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png" mode="widthFix"></image>
-				</view>
-				<text class="fos_tit">快乐家庭宠物寄养</text>
-				<text class="fos_distance">1.3km</text>
-				<text class="fos_price fr">￥588/晚</text>
-			</view>
-			<view class="fosterages ">
-				<view class="fos_img">
-					<image src="https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png" mode="widthFix"></image>
-				</view>
-				<text class="fos_tit">快乐家庭宠物寄养</text>
-				<text class="fos_distance">1.3km</text>
-				<text class="fos_price fr">￥588/晚</text>
-			</view>
-			<view class="fosterages ">
-				<view class="fos_img">
-					<image src="https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png" mode="widthFix"></image>
-				</view>
-				<text class="fos_tit">快乐家庭宠物寄养</text>
-				<text class="fos_distance">1.3km</text>
-				<text class="fos_price fr">￥588/晚</text>
-			</view>
-			<view class="fosterages ">
-				<view class="fos_img">
-					<image src="https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png" mode="widthFix"></image>
-				</view>
-				<text class="fos_tit">快乐家庭宠物寄养</text>
-				<text class="fos_distance">1.3km</text>
-				<text class="fos_price fr">￥588/晚</text>
-			</view>
+			<Litpics :Litpics="Litpics"></Litpics>
 		</view>
 		
 		
 		<view class="banner">
 			<text class="info_tit">大咖访谈：寄养师进阶之路</text>
-			<view class="teachers">
-				<view class="tea_l">
-					<text class="tea_tit">快乐家庭宠物寄养</text>
-					<text class="tea_sum">内容描述生活中小动物久是自己的亲人，没有谁比它更懂主人的心，有了它……</text>
-					<view class="tea_tx">
-						<image src="https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png"  class="tx_img"></image>
-						<view class="tx_r">
-							<text class="tx_tit">寄养师</text>
-							<text class="tx_nick">花家</text>
-						</view>
-					</view>
-				</view>
-				<view class="tea_img fr">
-					<image src="https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png" class="tea_img"></image>
-				</view>
-			</view>
-			<view class="teachers">
-				<view class="tea_l">
-					<text class="tea_tit">快乐家庭宠物寄养</text>
-					<text class="tea_sum">内容描述生活中小动物久是自己的亲人，没有谁比它更懂主人的心，有了它……</text>
-					<view class="tea_tx">
-						<image src="https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png"  class="tx_img"></image>
-						<view class="tx_r">
-							<text class="tx_tit">寄养师</text>
-							<text class="tx_nick">花家</text>
-						</view>
-					</view>
-				</view>
-				<view class="tea_img fr">
-					<image src="https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png" class="tea_img"></image>
-				</view>
-			</view>
+			
+			<Bigpics :Bigpics="Bigpics_items"></Bigpics>
 		</view>
 		
 		<!--view>测试数据
@@ -97,8 +36,10 @@
 <script>
 	var dataObj = require('../../data/data.js');
 
-	console.log(dataObj);
+	//console.log(plus);
 	import graceSwiper from "../../graceUI/components/graceSwiper.vue";
+	import Bigpics from "../../components/Bigpics.vue";
+	import Litpics from "../../components/Littlepics.vue";
 	export default {
 		data() {
 			return {
@@ -106,6 +47,54 @@
 					{ imgUrl: 'https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png', path : ""},
 					{ imgUrl: 'https://aecpm.alicdn.com/simba/img/TB1W4nPJFXXXXbSXpXXSutbFXXX.jpg', path : ""},
 					{ imgUrl: 'https://aecpm.alicdn.com/simba/img/TB1_JXrLVXXXXbZXVXXSutbFXXX.jpg', path : ""}
+				],
+				Bigpics_items:[
+					{
+						tit:'快乐家庭宠物寄养',
+						url:'',
+						sum:'内容描述生活中小动物久是自己的亲人，没有谁比它更懂主人的心，有了它……',
+						tx_img:'https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png',
+						tx_tit:'寄养师',
+						tx_nick:'花家',
+						big_pic:'https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png'
+					},{
+						tit:'快乐家庭宠物寄养',
+						url:'',
+						sum:'内容描述生活中小动物久是自己的亲人，没有谁比它更懂主人的心，有了它……',
+						tx_img:'https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png',
+						tx_tit:'寄养师',
+						tx_nick:'花家',
+						big_pic:'https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png'
+					},
+					{
+						tit:'快乐家庭宠物寄养',
+						url:'',
+						sum:'内容描述生活中小动物久是自己的亲人，没有谁比它更懂主人的心，有了它……',
+						tx_img:'https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png',
+						tx_tit:'寄养师',
+						tx_nick:'花家',
+						big_pic:'https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png'
+					},
+				],
+				Litpics:[
+					{
+						tit:'快乐家庭宠物寄养',
+						distance:'1.3km',
+						price:'￥588/晚',
+						pic:'https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png'
+					},
+					{
+						tit:'快乐家庭宠物寄养',
+						distance:'1.3km',
+						price:'￥588/晚',
+						pic:'https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png'
+					},
+					{
+						tit:'快乐家庭宠物寄养',
+						distance:'1.3km',
+						price:'￥588/晚',
+						pic:'https://free.modao.cc/uploads4/images/2927/29273985/v2_pkc2z5.png'
+					}
 				],
 				fos_data:{},
 				//加载代码
@@ -149,7 +138,9 @@
 			},
 		},
 		components:{
-			graceSwiper
+			graceSwiper,
+			Bigpics,
+			Litpics
 			
 		},
 		
@@ -192,51 +183,6 @@
 	margin-left: 50upx;
 	margin-top: 70upx;
 }
-.fosterages{
-	margin-top: 36upx;
-	width:324upx;
-	margin-bottom: 40upx;
-}
-.fos_img image{
-	width:324upx;
-	height:212upx;
-	border-radius: 10upx;
-}
-.fos_tit{font-weight: bold;width: 100%;
-font-size: 24upx;}
-.fos_distance{
-	background: url(../../static/fosterage/dw.png) left no-repeat;
-	background-size:20upx;
-	padding-left:22upx ;
-	font-size: 20upx;
-	color: #8E8585;
-	
-}
-.fos_price{
-	color: #F39319;
-	font-size: 20upx;
-}
-.teachers{
-	border-top: 4upx solid #FAF8F7;
-    padding-top: 32upx;    display: flex;
-    margin-top: 36upx;    width: 100%;    justify-content: space-between;
-}
-.tea_l{width: 300upx;flex: 1 50%;flex-direction: column;}
-.tea_tit{width: 280upx;    font-size: 28upx;font-weight: bold;margin-bottom: 20upx;}
-.tea_sum{width: 300upx;     color: #8E8585;font-size: 24upx;margin-bottom: 20upx;    line-height: 50upx;}
-.tea_tx{width: 300upx;  display: flex;  }
-.tea_img{width: 324upx;height: 328upx;border-radius:10upx ;flex: 1 50%;}
-.tx_img{
-	width: 90upx;
-	height: 90upx;
-	border-radius: 50%;
-}
-.tx_r{
-	    display: flex;
-    flex-direction: column;
-    margin-left: 30upx;justify-content: center;
-}
-.tx_tit{ color: #8E8585;font-size: 24upx;width: 100%;margin-top:10upx ;}
-.tx_nick{font-size: 26upx;width: 100%;}
+
 
 </style>

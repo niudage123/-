@@ -261,11 +261,17 @@
 				</text>
 			</view>
 		</view>
+		<view class="banner">
+			<text style="    color: rgb(243, 147, 25);border: 1px solid rgb(243, 147, 25);width: 156px;height: 38px;line-height: 38px;
+    text-align: center;border-radius: 20px;">立即沟通</text>
+			<text style="color:white;background-color:rgb(243, 147, 25);width: 158px;height: 40px;line-height: 40px;
+    text-align: center;border-radius: 20px;">直接下单</text>
+		</view>
 	</view>
 </template>
 <script>
 	//import Calendar from 'vue-calendar-component'; 1553580632
-	import Calendar from '../../graceUI/calendar/index.vue';
+	import Calendar from '../../components/calendar/index';
 	
 	
 	
@@ -619,5 +625,14 @@ background-color: #FAF8F7;
 .sum_tit{
 	color: #000000;
 	font-size: 26upx;
+}
+.zxkf{
+	font-size: 22upx;
+    padding: 4upx 14upx;
+    border-radius: 44upx;
+    color: rgba(243,147,25,1);
+    border: 2upx solid rgba(243,147,25,1);
+    align-self: flex-end;
+    margin-top: -60upx;
 }
 </style>

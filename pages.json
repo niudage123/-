@@ -69,7 +69,10 @@
         }
         ,{
             "path" : "pages/familydetail/familydetail",
-            "style" : {}
+            "style" : {"navigationBarTitleText" : "家庭详情"}
+        },{
+            "path" : "pages/login-family/login-family",
+            "style" : {"navigationBarTitleText" : "家庭信息"}
         }
     ],
     "globalStyle" : {
